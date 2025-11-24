@@ -43,7 +43,7 @@ spec:
   ipFamilyPolicy: SingleStack
   type: LoadBalancer
   ports:
-  - port: 9988
+  - port: 23
     targetPort: 9988
     protocol: TCP
     name: tcp
