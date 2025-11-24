@@ -37,9 +37,10 @@ metadata:
   namespace: go-chat
   labels:
     app: go-chat
-  annotations:
-    metallb.io/ip-allocated-from-pool: ipv6-default
 spec:
+  ipFamilies:
+  - IPv6
+  ipFamilyPolicy: SingleStack
   type: LoadBalancer
   ports:
   - port: 9988
