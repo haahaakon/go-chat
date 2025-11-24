@@ -37,6 +37,8 @@ metadata:
   namespace: go-chat
   labels:
     app: go-chat
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: "chat.br0.no"
 spec:
   ipFamilies:
   - IPv6
