@@ -15,7 +15,7 @@ var clients []net.Conn
 func StartServer(messages *[]chat.Message) {
 	userId := 1
 	const (
-		SERVER_HOST = "localhost"
+		SERVER_HOST = "0.0.0.0"
 		SERVER_PORT = "9988"
 		SERVER_TYPE = "tcp"
 	)
